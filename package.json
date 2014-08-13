@@ -1,0 +1,26 @@
+{
+  "name": "kwaai-apiware",
+  "version": "0.0.1",
+  "description": "Express middleware specifically for creating restful JSON api's using JSON Schema, Mongo and Express",
+  "main": "./index.js",
+  "author": {
+    "name": "Martin Naude",
+    "email": "martin@entelect.co.za"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinza78/kwaai-apiware"
+  },
+  "dependencies": {
+      "kwaai-crudware":"~0.0.5",
+      "connect": "~2.15.0",
+      "middleware-flow":"~0.5.1"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/martinza78/kwaai-apiware",
+  "_id": "kwaai-apiware@0.0.1",
+  "_from": "kwaai-apiware@"
+}
