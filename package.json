@@ -12,8 +12,8 @@
     "url": "git://github.com/martinza78/kwaai-apiware"
   },
   "dependencies": {
-      "kwaai-crudware":"~0.0.5",
-      "connect": "~2.15.0",
+      "kwaai-crudware":"~0.0.7",
+      "connect": "~3.1.1",
       "middleware-flow":"~0.5.1"
   },
   "engines": {
