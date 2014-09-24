@@ -1,6 +1,6 @@
 {
   "name": "kwaai-apiware",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Express middleware specifically for creating restful JSON api's using JSON Schema, Mongo and Express",
   "main": "./index.js",
   "author": {
@@ -22,6 +22,6 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/martinza78/kwaai-apiware",
-  "_id": "kwaai-apiware@0.0.5",
+  "_id": "kwaai-apiware@0.0.6",
   "_from": "kwaai-apiware@"
 }
