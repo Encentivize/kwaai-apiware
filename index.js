@@ -1,4 +1,4 @@
-﻿module.exports = require('./lib/apiware.js');
+﻿module.exports.apiWare = require('./lib/apiware.js');
 
 
 
