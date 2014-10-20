@@ -11,34 +11,44 @@ var schema={
     required:["name"]
 }
 
+var mongo=require("mongodb")
 
-var app=express();
-var kwaaiApiware=require('./index.js').apiWare(connectionString);
-app.set('port', process.env.PORT || 1337);
-
-kwaaiApiware.apify(app);
-
-app.use(kwaaiApiware.validateApiCall());
-
-app.apiRoute({
-    collection:"test collection",
-    schema:schema,
-    apiPrefix:"/",
-    routeName:"test",
-    useName:true
+var kwaaiApiware=null;
+mongo.MongoClient.connect(connectionString,function(err,database){
+    kwaaiApiware =require('./index.js').apiWare(database);
+    prep();
 });
 
+var app = express();
+function prep() {
+    app.set('port', process.env.PORT || 1337);
 
-/*
-var app=express();
+    kwaaiApiware.apify(app);
 
-app.use(kwaaiApiWare.validateApiCall())
-kwaaiApiWare.apiRoute(app,{
-    schema:{},
-    collection:{}
+    app.use(kwaaiApiware.validateApiCall());
 
-})*/
+    app.apiRoute({
+        collection: "test collection",
+        schema: schema,
+        apiPrefix: "/",
+        routeName: "test",
+        useName: true
+    });
 
 
-var server=http.createServer(app);
-server.listen(app.get('port'), function(){console.log('Express server listening on port ' + app.get('port'));});
+    /*
+     var app=express();
+
+     app.use(kwaaiApiWare.validateApiCall())
+     kwaaiApiWare.apiRoute(app,{
+     schema:{},
+     collection:{}
+
+     })*/
+
+
+    var server = http.createServer(app);
+    server.listen(app.get('port'), function () {
+        console.log('Express server listening on port ' + app.get('port'));
+    });
+}
