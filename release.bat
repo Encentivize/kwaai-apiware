@@ -11,5 +11,5 @@ git commit -a -m "Incremented version to %version% for release"
 echo "--------------------------------------------------------------------------------"
 echo "Tag this release and push to origin"
 git tag %version%
-git push origin master --tags
+git push origin master
 echo "--------------------------------------------------------------------------------"
