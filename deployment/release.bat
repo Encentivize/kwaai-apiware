@@ -3,7 +3,7 @@ echo off
 echo "--------------------------------------------------------------------------------"
 echo "Commit changes"
 dir
-for /f "delims=" %%a in deployment/version.exe package.json do @set version=%%a
+for /f "delims=" %%a in (deployment\\version.exe package.json) do @set version=%%a
 echo New version = %version%
 
 git config alias.admin "deployment/git-as.sh %env.TEAMCITY_DATA_PATH%/GitareHero"
