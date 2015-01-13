@@ -1,21 +1,21 @@
 {
   "name": "kwaai-apiware",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "Express middleware specifically for creating restful JSON api's using JSON Schema, Mongo and Express",
   "main": "./index.js",
   "author": {
     "name": "Martin Naude",
-    "email": "martin@entelect.co.za"
+    "email": "martin@encentivize.co.za"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/martinza78/kwaai-apiware"
+    "url": "git://github.com/Encentivize/kwaai-apiware"
   },
   "dependencies": {
-      "kwaai-crudware":"0.1.5",
-      "body-parser": "1.6.7",
-      "method-override":"2.1.3",
-      "middleware-flow":"0.5.1"
+      "kwaai-crudware":"0.1.6",
+      "body-parser": "1.10.1",
+      "method-override":"2.3.1",
+      "middleware-flow":"0.6.1"
   },
     "devDependencies": {
         "express": "4.9.7",
@@ -28,7 +28,7 @@
     "node": ">= 0.10.0"
   },
   "license": "MIT",
-  "homepage": "https://github.com/martinza78/kwaai-apiware",
-  "_id": "kwaai-apiware@0.1.3",
+  "homepage": "https://github.com/Encentivize/kwaai-apiware",
+  "_id": "kwaai-apiware@0.1.6",
   "_from": "kwaai-apiware@"
 }
