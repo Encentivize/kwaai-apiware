@@ -1,6 +1,6 @@
 {
   "name": "kwaai-apiware",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Express middleware specifically for creating restful JSON api's using JSON Schema, Mongo and Express",
   "main": "./index.js",
   "author": {
