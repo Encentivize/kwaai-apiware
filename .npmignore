@@ -10,3 +10,4 @@ lib-cov
 .idea/
 release.bat
 version.exe
+Gruntfile.js
