@@ -8,3 +8,5 @@ testing.js
 coverage.html
 lib-cov
 .idea/
+release.bat
+version.exe
