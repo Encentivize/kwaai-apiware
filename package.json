@@ -1,6 +1,6 @@
 {
   "name": "kwaai-apiware",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "description": "Express middleware specifically for creating restful JSON api's using JSON Schema, Mongo and Express",
   "main": "./index.js",
   "author": {
@@ -12,18 +12,18 @@
     "url": "git://github.com/Encentivize/kwaai-apiware"
   },
   "dependencies": {
-      "kwaai-crudware":"0.1.6",
-      "body-parser": "1.10.1",
-      "method-override":"2.3.1",
-      "middleware-flow":"0.6.1"
+    "kwaai-crudware": "0.1.6",
+    "body-parser": "1.10.1",
+    "method-override": "2.3.1",
+    "middleware-flow": "0.6.1"
   },
-    "devDependencies": {
-        "express": "4.9.7",
-        "mongodb":"1.4.19",
-        "grunt": "0.4.5",
-        "grunt-cli": "0.1.13",
-        "npm": "2.1.5"
-    },
+  "devDependencies": {
+    "express": "4.9.7",
+    "mongodb": "1.4.19",
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "npm": "2.1.5"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
